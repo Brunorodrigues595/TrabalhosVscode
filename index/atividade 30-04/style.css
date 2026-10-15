@@ -1,0 +1,64 @@
+
+body, p, li {
+    font-family: Arial;
+    color: black;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: darkblue;
+}
+
+img {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+
+#titulo-principal {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+#top3 {
+    background-color: rgb(3, 217, 255);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+}
+
+
+#top3 h2 {
+    color: darkblue;
+}
+
+#recomendacao {
+    background-color: rgb(255, 255, 0);
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+.texto-central {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #0381ff ;
+    border: 1px solid black;
+
+}
+
+.secao-padrao {
+    background-color: lightgray;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+}
+
+
+ul, ol {
+    list-style-position: inside;
+}

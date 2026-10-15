@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <title>Programação</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Evento escolar do sesc santa cruz do sul 2026</h1>
+        <p>Venha esplorar nossas exposições de projetos.</p>
+        
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="inicio.html">Sobre</a></li>
+            <li><a href="programacao.html">Programação</a></li>
+            <li><a href="inscricao.html">Inscrição</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <section id="inscricao" class="secao-formulario">
+        <h2>Formulario de Inscrição:</h2>
+        <form action="#" method="post">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="turma">Turma:</label>
+            <input type="text" id="turma" name="turma" required>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="Idade" required>
+
+            <label for="tipo">Tipo de participação:</label>
+            <select id="tipo" name="tipo">
+                <option value="cultural">Responsavel do aluno</option>
+                <option value="natural">Aluno</option>
+                <option value="historico">Professor</option>
+                <option value="gastronomico">Visitantes</option>
+                <option value="outro">Outros</option>
+            </select>
+            
+            <label for="observação">Alguma observação:</label>
+            <textarea id="observação" name="observação" rows="4"></textarea>
+
+            <button type="submit">Enviar inscrição</button>
+        </section>    
+       <footer>
+        <p> 2026 | @Sesc RS🏫</p>
+    </footer> 
+</body>
+</html>

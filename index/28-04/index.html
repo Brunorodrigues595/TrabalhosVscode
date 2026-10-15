@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulários</title>
+</head>
+<body>
+    <div class="container">
+        <div class="formulario">
+        <h1> formulários HTML</h1>
+
+        <form action="recebe.html"> <!-- action é o atributo que dfine paraonde os dados devem ser enviados, quando o botão do formularios for clicado.
+            Os metodos de envio são get e post é usado para enviar dados atraves a url, enquanto o mentodo post é usado para enviar dados atraves do corpo da requisição HTTP. O metodo padrao é GET, Esse metodos sao usados juntos na linguagem de programação do lado do servidor, como Javascript, PHP, python, Etc.. -->
+            <label for="id_nome">
+                Nome:
+            </label>
+            <br>
+            <input type="text" id="id_nome" name="lnome" value=""> <!-- aonde os dados serão digitados-->
+            <br>
+            <label for="id_senha">
+                Senha:
+            </label>
+            <br>
+            <input type="password" id="id_senha" name="lsenha" value=""> <!-- type é o tipo de dados que vai ser digitado no campo input, id é o identificador do campo, name é o nome do campo, valie é o valor do campo. -->
+            <br><br>
+            <input type="submit" value="Enviar"> <!-- submit envia os dados do formulario para o servidor -->
+
+        </form>
+        <form action="">
+            <p> escolha sua cor favorita</p>
+
+            <input type="radio" id="azul" name="cor" value="azul">
+            <label for="azul">Azul</label>
+            <br><br>
+            <input type="radio" id="Vermelho" name="cor" value="vermelho">
+            <label for="azul">vermelho</label>
+            <br> <br>
+            <input type="radio" id="everd" name="cor" value="verde">
+            <label for="azul">verde</label>
+            
+
+
+
+
+
+
+        </form>
+        <br> <br>
+        <p> Escolha seu esporte favorito!</p>
+        <form action="">
+            
+
+            <input type="checkbox" id="esporte1" value="Futebol">
+            <label for="esport1">Futebol</label>
+            <br> <br>
+            <input type="checkbox" id="esporte2" value="corrida">
+            <label for="esport2">corrida</label>
+            <br> <br>
+            <input type="checkbox" id="esporte3" value="ciclismo">
+            <label for="esport3">ciclismo</label>
+
+
+
+
+        </form>
+
+
+    </div>
+</body>
+</html>

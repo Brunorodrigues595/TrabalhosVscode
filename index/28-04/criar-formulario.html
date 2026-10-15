@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulários</title>
+</head>
+<body>
+    <div class="container">
+        <div class="formulario">
+        <h1> Cadastro pra entrevista de emprego</h1>
+
+        <form action="recebe.html"> <!-- action é o atributo que dfine paraonde os dados devem ser enviados, quando o botão do formularios for clicado.
+            Os metodos de envio são get e post é usado para enviar dados atraves a url, enquanto o mentodo post é usado para enviar dados atraves do corpo da requisição HTTP. O metodo padrao é GET, Esse metodos sao usados juntos na linguagem de programação do lado do servidor, como Javascript, PHP, python, Etc.. -->
+            <h2> Dados pessoais</h2>
+            <label for="id_nome">
+                Nome:
+            </label>
+            <br>
+            <input type="text" id="id_nome" name="lnome" value=""> <!-- aonde os dados serão digitados-->
+            <br> <br>
+            <label for="id_idade">
+                Idade:
+            </label>
+            <br>
+            <input type="text" id="id_idade" name="lidade" value=""> <!-- type é o tipo de dados que vai ser digitado no campo input, id é o identificador do campo, name é o nome do campo, valie é o valor do campo. -->
+            <br><br>
+            <h2> Contato</h2>
+
+            <label for="id_E-mail">
+                E-mail:
+            </label>
+            <br>
+            <input type="text" id="id_E-mail" name="lE-mail" value=""> <!-- aonde os dados serão digitados-->
+            <br> <br>
+            <label for="id_idade">
+                Telefone:
+            </label>
+            <br>
+            <input type="text" id="id_idade" name="lidade" value="">
+             <!-- submit envia os dados do formulario para o servidor -->
+
+        </form>
+        <form action="">
+            <h2> Escolha o turno para seu atendimento </h2>
+
+            <input type="radio" id="Manhã" name="turno1" value="Manhã">
+            <label for="azul">Manhã</label>
+            <br><br>
+            <input type="radio" id="tarde" name="Turno2" value="Tarde">
+            <label for="azul">Tarde</label>
+            <br> <br>
+            <input type="radio" id="Noite" name="Turno3" value="Noite">
+            <label for="azul">Noite</label>
+            
+
+
+
+
+
+
+        </form>
+        <br> <br>
+        <h2> Seus Interesses </h2>
+        <form action="">
+            
+
+            <input type="checkbox" id="Interesses1" value=" Tecnologia">
+            <label for="Interesses1"> Tecnologia</label>
+            <br> <br>
+            <input type="checkbox" id="Interesses2" value="Esportes">
+            <label for="Interesses2">Esportes</label>
+            <br> <br>
+            <input type="checkbox" id="Interesses3" value="Música">
+            <label for="Interesses3">Música</label>
+            <br> <br>
+            <input type="checkbox" id="Interesses4" value="Jogos">
+            <label for="Interesses4">Jogos</label>
+            <br> <br>
+
+            
+
+
+
+
+        </form>
+        
+        <br> <br>
+        <h2> Aceite os Termos do Formulário </h2>
+        <form action="">
+            <input type="checkbox" id="Termos" value="termos">
+            <label for="Termos">Aceito os termos de cadrastro</label>
+            <br> <br>
+        </form>
+
+
+    </div>
+</body>
+</html>

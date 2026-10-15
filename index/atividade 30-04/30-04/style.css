@@ -1,0 +1,62 @@
+/* CSS é utilizado para realizar modificações e estelização dos elementos do nosso html*/
+
+h1{
+    font-size: 60px;
+    color: red;
+}
+p{
+    text-align: center;
+}
+/* Ao utilizar o css temos a propiedade e o valor, color: red - color é a propriedade e red o valor, e sempre encerramos com ponto e virgula ; */
+
+/* Seletores*/
+/* Seletores são utilizados para "encontrar" ou selecionar os elementos HTML que queremos estilizar*/
+
+/* quanto queremos estilizar algum elemento do html usamos o seletor no css, no caso, se queremos editar algum paragrafo podemos chamar o p { } dentro do css e realizar a alteração que queremos ou  precisamos */
+
+.titulo{
+    font-size: 20px;
+}
+/* quando usamos .nome_seletor estamos usando um seletor que chama uma classe dentro do HTMl*/
+
+#primeiro_texto{
+    color: blue;
+    background-color: chartreuse;
+}
+/* quando usamos # estamos um seletor   que chama um id dentro do meu HTMl */
+
+div{
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+div.h3_textos{
+    background-color: orange;
+    opacity: 0.5;
+}
+/* quando chamamos uma div.h3.textos vamos alterar apenas as divs qie tenham a class h3_textos, outros elementos que nao forem div e teverem a clas h3_textos nao sofrem alterações*/
+
+*{
+font-family: Arial, Helvetica, sans-serif;
+color: black;
+font-size: 20px;
+}
+/* é um seletor universal, ou seja, quando estilizo usando ele, vai ser aplicado estilo em todos os elementos*/
+
+h1, h2, h3{
+    font-family: fantasy;
+    font-size: 40px;
+    color: blueviolet;
+}
+/* para usar seletores de forma agrupada, eu chamo eles e separo por virgula, assim consigo usar varios seletores para uma mesma alteração, isso é chamado de agrupamento de seletores */
+
+.margem{
+    margin: 80px 40px 20px 10px;
+    border: 1px solid black;
+
+}
+/* usamos os elementos de margem temos 4 tipos, margin-top, margin-right, margin-botton, margin-left
+quando utilizo apenas margin 30px; estou aplicando a margin em todos os sentidos, top, rigth, booton, e left
+margin: auto; ocupa a margem do elemento pai
+quando uso margin: 50px 50px; o primeniro valor é referente a top e botton e o segundo é referente a right e left
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mural de Recados Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="painel-principal">
+        <header class="cabecalho-mural">
+            <h1>Mural de Recados <span>Escolar</span></h1>
+            <p>Deixe sua mensagem para a comunidade</p>
+        </header>
+
+        
+        <div class="linha-luminosa"></div>
+
+  
+        <div class="linha-superior">
+            
+            <div class="bloco-formulario">
+                <h2>✍️ Escrever Recado</h2>
+                
+                <label for="campoNome">Seu Nome:</label>
+                <input type="text" id="campoNome" placeholder="Digite seu nome">
+
+                <label for="campoAssunto">Assunto:</label>
+                <input type="text" id="campoAssunto" placeholder="Assunto do recado">
+
+                <label for="campoMensagem">Mensagem:</label>
+                <textarea id="campoMensagem" rows="2" placeholder="Escreva sua mensagem"></textarea>
+
+                <div class="botoes-acao">
+                    <button id="botaoPrevia">Visualizar</button>
+                    <button id="botaoPublicar">Publicar</button>
+                </div>
+
+                <p id="textoErro" class="alerta-erro"></p>
+            </div>
+
+            
+            <div class="bloco-previa">
+                <h2>👁️ Pré-visualização</h2>
+                <div id="caixaPrevia" class="cartao-conteudo">
+                    <p class="aviso-vazio">Sua prévia aparecerá aqui...</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="bloco-mural">
+            <h2>📌 Mural de Mensagens</h2>
+            <div id="listaMural" class="grade-mural">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

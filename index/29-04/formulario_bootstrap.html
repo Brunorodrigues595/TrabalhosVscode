@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Formulários</title>
+</head>
+<body>
+    <div class="container-fluid p-5 bg-light text-dark text-center">
+    <h1> Cadastro pra entrevista de emprego</h1>
+
+    <!-- Adicione uma div em volta do form para estilizar o fundo e a borda -->
+    <div class="caixa-formulario">
+        <form action="recebe.html"><!-- action é o atributo que dfine paraonde os dados devem ser enviados, quando o botão do formularios for clicado.
+            Os metodos de envio são get e post é usado para enviar dados atraves a url, enquanto o mentodo post é usado para enviar dados atraves do corpo da requisição HTTP. O metodo padrao é GET, Esse metodos sao usados juntos na linguagem de programação do lado do servidor, como Javascript, PHP, python, Etc.. -->
+            <h2> Dados pessoais</h2>
+           <label for="id_nome">Nome:</label><br>
+        <input type="text" id="id_nome" name="lnome" required>
+            <br>
+            <!-- aonde os dados serão digitados-->
+            <br> <br>
+            <label for="id_idade">
+                Idade:
+            </label>
+            <br>
+            <input type="number" id="id_contato" name="lcontato" value=""> <!-- type é o tipo de dados que vai ser digitado no campo input, id é o identificador do campo, name é o nome do campo, valie é o valor do campo. -->
+            <br><br>
+            <h2> Contato</h2>
+            
+            <label for="id_E-mail">E-mail📩:</label><br>
+        <input type="email" id="id_E-mail" name="lE-mail" required> <!-- aonde os dados serão digitados-->
+            <br> <br>
+            <label for="id_idade">
+                Telefone📞:
+            </label>
+            <br>
+            <input type="text" id="id_idade" name="lidade" value="">
+             <!-- submit envia os dados do formulario para o servidor -->
+
+        
+            <h2> Escolha o turno para seu atendimento </h2>
+
+<div class="grupo-alinhado">
+    <div class="item-radio">
+        <input type="radio" id="manha" name="turno" value="Manhã">
+        <label for="manha">Manhã</label>
+    </div>
+    
+    <div class="item-radio">
+        <input type="radio" id="tarde" name="turno" value="Tarde">
+        <label for="tarde">Tarde</label>
+    </div>
+    
+    <div class="item-radio">
+        <input type="radio" id="noite" name="turno" value="Noite">
+        <label for="noite">Noite</label>
+    </div>
+</div>
+        <br> <br>
+        <h2> Seus Interesses </h2>
+
+<div class="grupo-alinhado">
+    <div class="item-checkbox">
+        <input type="checkbox" id="Interesses1" value="Tecnologia">
+        <label for="Interesses1">Tecnologia</label>
+    </div>
+    
+    <div class="item-checkbox">
+        <input type="checkbox" id="Interesses2" value="Esportes">
+        <label for="Interesses2">Esportes</label>
+    </div>
+    
+    <div class="item-checkbox">
+        <input type="checkbox" id="Interesses3" value="Música">
+        <label for="Interesses3">Música</label>
+    </div>
+    
+    <div class="item-checkbox">
+        <input type="checkbox" id="Interesses4" value="Jogos">
+        <label for="Interesses4">Jogos</label>
+    </div>
+</div>
+
+            
+
+
+
+
+        
+        
+        <br> <br>
+        <h2> Aceite os Termos do Formulário </h2>
+        
+            <div class="termos-grupo">
+            <input type="checkbox" id="Termos" name="termos" required> 
+            <label for="Termos">
+                Aceito os <a href="https://docs.google.com/document/d/1hvietL_AjLVGPHQZWxypBp-99jZvKQmns4uuqFi48lI/edit?usp=sharing" target="_blank">termos de uso</a>
+            </label>
+        </div>
+            <br> <br>
+            <input type="submit" value="Enviar cadastro" class="btn btn-primary">
+        </form>
+        
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fa;
+    color: #333333;
+}
+
+
+.cabecalho {
+    background-color: #093868;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cabecalho h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.cabecalho button {
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    
+}
+
+.cabecalho button:hover {
+    background-color: #c0392b;
+}
+
+
+.menu {
+    background-color: rgb(52, 127, 161);
+    padding: 15px 0;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color:#0099ff
+}
+
+
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+
+.secao-sobre ul {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    border: 1px solid #e1e8ed;
+}
+
+.secao-sobre li {
+    margin-bottom: 10px;
+}
+
+
+.secao-pontos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
+.card-local-completo {
+    background-color: #ffffff;
+    display: flex; 
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    overflow: hidden; 
+    border-left: 6px solid #2980b9; 
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-local-completo:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+
+.card-texto {
+    flex: 1; 
+    padding: 30px;
+}
+
+.card-texto h3 {
+    margin-top: 0;
+    color: #2980b9;
+    font-size: 20px;
+}
+
+.card-texto p {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+
+.card-imagem-ampliavel {
+    width: 250px; 
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    border-left: 1px solid #eeeeee;
+}
+
+
+.card-imagem-ampliavel a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.imagem-pequena {
+    width: 90%;
+    height: 100%;
+    object-fit: cover; 
+    transition: 0.3s;
+    cursor: zoom-in; 
+    border-radius: 10px;
+}
+
+
+.card-imagem-ampliavel a:hover .imagem-pequena {
+    transform: scale(1.05); 
+}
+
+
+.btn-lugar {
+    display: inline-block;
+    background-color: rgb(41, 128, 185);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition:  0.2s;
+}
+
+.btn-lugar:hover {
+    background-color: #1f618d;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eeeeee;
+}
+
+th {
+    background-color: #2980b9;
+    color: #ffffff;
+}
+
+tr:hover {
+    background-color: #80c1f3;
+}
+
+
+.secao-formulario form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.secao-formulario label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.secao-formulario input,
+.secao-formulario select,
+.secao-formulario textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.secao-formulario button {
+    margin-top: 25px;
+    background-color: #2600ff;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.secao-formulario button:hover {
+    background-color: #051496;
+}
+
+
+.rodape {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+.rodape p {
+    margin: 5px 0;
+}
+
+
+.rodape {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 40px 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contato-info {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+
+.contato-info h3 {
+    color: #3498db; 
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.contato-info p {
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+
+.linha-rodape {
+    border: 0;
+    border-top: 1px solid #4d4b4b;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.rodape-encerramento p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #bdc3c7; 
+}

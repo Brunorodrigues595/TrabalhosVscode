@@ -1,0 +1,78 @@
+/* No seu style.css */
+body {
+    background-color: #000000; 
+    color: #f8fafc;
+}
+
+.caixa-formulario {
+    background-color: #84b3ff;
+    border: 1px solid #334155;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 450px;
+    margin: auto;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+input[type="submit"] {
+    background-color: #007bff; 
+    color: white;              
+    padding: 10px 20px;        
+    border: none;              
+    border-radius: 8px;        
+    font-size: 16px;           
+    cursor: pointer;           
+    width: 100%;               
+    margin-top: 20px;
+}
+
+
+
+
+.item-checkbox {
+    display: flex;
+    align-items: center;    
+    margin-bottom: 10px;     
+    gap: 10px;               
+}
+
+.item-checkbox input {
+    cursor: pointer;         
+}
+
+.item-checkbox label {
+    cursor: pointer;
+    margin-bottom: 0;        
+}
+
+.grupo-alinhado {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    width: fit-content;      
+    margin: 0 auto 20px auto; 
+}
+
+.item-radio {
+    display: flex;
+    align-items: center;    
+    gap: 10px;               
+    margin-bottom: 8px;      
+}
+
+
+.item-radio input {
+    margin: 0;
+    cursor: pointer;
+}
+
+.item-radio label {
+    cursor: pointer;
+    margin: 0;
+}

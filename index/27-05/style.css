@@ -1,0 +1,200 @@
+
+:root {
+  
+    --cor-fundo-site: #000000;
+    --cor-card-perfil: #2c303b;
+    --cor-texto-principal: #ffffff;
+    --cor-fundo-trabalho: #2c303b;
+    --cor-borda-trabalho: rgb(3, 19, 63);
+}
+
+
+#toggle-tema:checked ~ .site-wrapper {
+    --cor-fundo-site: #f4f6f9;
+    --cor-card-perfil: #ffffff;
+    --cor-texto-principal: #1a1a1a;
+    --cor-fundo-trabalho: #ffffff;
+    --cor-borda-trabalho: #faba22;
+}
+
+
+#toggle-tema {
+    display: none;
+}
+
+
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.site-wrapper {
+    background-color: var(--cor-fundo-site);
+    color: var(--cor-texto-principal);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.menu {
+    background-color: #03133F;
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.menu li {
+    margin: 10px 15px;
+}
+
+.menu a, .btn-tema {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.menu a:hover, .btn-tema:hover {
+    text-decoration: underline;
+    color: #0099ff;
+}
+
+
+.sobre-mim {
+    background-color: var(--cor-card-perfil);
+    border-radius: 40px;
+    padding: 30px;
+    max-width: 85%; 
+    margin: 40px auto;
+    display: flex;
+    align-items: center;      
+    justify-content: center;
+    gap: 20px;                 
+    flex-wrap: wrap; 
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.foto-perfil {
+    width: 90px;             
+    height: 90px;
+    border-radius: 50%;       
+    object-fit: cover;         
+    border: 3px solid #5c5c5c; 
+}
+
+.sobre-mim h2 {
+    margin: 0;                
+    font-size: 1.8rem;
+}
+
+.sobre-mim h3 {
+    margin: 5px 0 0 0;
+    font-size: 1.2rem;
+    font-weight: normal;
+    width: 100%;
+}
+
+.sobre-mim p {
+    margin-top: 10px;         
+    width: 100%;              
+    line-height: 1.5;
+}
+
+
+.grade-trabalhos {
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+    max-width: 1000px;
+    margin: 20px auto 40px auto;
+    padding: 0 15px;
+    box-sizing: border-box; 
+}
+
+/* O CARD DE CADA TRABALHO */
+.card-trabalho {
+    background-color: var(--cor-fundo-trabalho); 
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 8px solid var(--cor-borda-trabalho); 
+    transition: background-color 0.3s, border-color 0.3s;
+    box-sizing: border-box;
+    width: 100%; 
+}
+
+
+.card-trabalho h3 {
+    color: #0b4c8c; 
+    font-size: 1.1rem; 
+    margin-top: 0;
+    margin-bottom: 10px;
+    word-wrap: break-word; 
+    width: 100%;
+}
+
+.card-trabalho p {
+    color: var(--cor-texto-principal); 
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+
+.btn-acessar {
+    display: inline-block;
+    background-color: #004c99; 
+    color: #ffffff; 
+    padding: 10px 20px;
+    text-decoration: none; 
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+    font-size: 0.85rem;
+    max-width: 100%; 
+    box-sizing: border-box;
+}
+.btn-acessar:hover {
+    background-color: #003366; 
+}
+
+/* FOOTER (RODAPÉ) */
+footer {
+    background-color: #024e91;
+    border-top: 8px solid #03133f;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto; 
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}

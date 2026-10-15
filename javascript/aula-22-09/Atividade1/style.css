@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaeef1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.profile-card {
+    background: #ffffff;
+    width: 340px;
+    padding: 0; 
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    overflow: hidden; 
+}
+
+.hobby-container {
+    width: 100%;
+    height: 180px; 
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hobby-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.profile-card h1 {
+    font-size: 22px;
+    color: #333;
+    margin: 0 20px 5px 20px;
+}
+
+#funcao {
+    font-size: 15px;
+    color: #007bff;
+    font-weight: bold;
+    margin: 0 20px 15px 20px;
+}
+
+#bio {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0 20px 25px 20px;
+}
+
+.acoes {
+    margin: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.acoes p {
+    font-size: 14px;
+    color: #444;
+    margin: 0;
+}
+
+#btn-seguir {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#btn-seguir:hover {
+    background-color: #0056b3;
+}
+
+
+body.modo-escuro {
+    background-color: #1a1a1a;
+}
+
+body.modo-escuro .profile-card {
+    background: #2d2d2d;
+    color: #fff;
+}
+
+body.modo-escuro h1, 
+body.modo-escuro p {
+    color: #ddd;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaeef1;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+    margin: 0;
+    gap: 20px; 
+}
+
+
+#btn-tema {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.2s, transform 0.1s;
+}
+
+#btn-tema:hover {
+    background-color: #000;
+    transform: translateY(-2px);
+}
+
+.profile-card {
+    background: #ffffff;
+    width: 340px;
+    padding: 0;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    overflow: hidden;
+}
+
+.hobby-container {
+    width: 100%;
+    height: 180px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hobby-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.profile-card h1 {
+    font-size: 22px;
+    color: #333;
+    margin: 0 20px 5px 20px;
+}
+
+#funcao {
+    font-size: 15px;
+    color: #007bff;
+    font-weight: bold;
+    margin: 0 20px 15px 20px;
+}
+
+#bio {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0 20px 25px 20px;
+}
+
+.acoes {
+    margin: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.acoes p {
+    font-size: 14px;
+    color: #444;
+    margin: 0;
+}
+
+#btn-seguir {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#btn-seguir:hover {
+    background-color: #0056b3;
+}
+
+body.modo-escuro {
+    background-color: #121212;
+}
+
+body.modo-escuro .profile-card {
+    background: #1e1e1e;
+    color: #fff;
+}
+
+body.modo-escuro h1, 
+body.modo-escuro #bio,
+body.modo-escuro .acoes p {
+    color: #ddd;
+}
